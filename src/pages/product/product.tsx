@@ -27,7 +27,7 @@ const Product: React.FC = () => {
 
   return (
     <Card sx={{ maxWidth: 600, margin: '5px auto' }}>
-      <CardHeader title="Product Title" subheader="Brand" />
+      <CardHeader title={product.title} subheader={product.brand} />
       <Carousel>
         {product.images.map((item) => (
           <CardMedia sx={{ height: 0, paddingTop: '56.25%' }} image={item} />
